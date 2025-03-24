@@ -20,16 +20,16 @@ Dentro do container, clique em "+ Container" e mude o "Anonymous access level" p
 Seguindo esses 5 passos, já temos criado um **mecanismo de busca**, um **recurso de IA** e um **Storage Account** com algumas informações.
 
 ## Passo 6: Importando dados
-Agora, para finalizarmos, devemos ir até o nosso mecanismo de busca e clicar em "import data". Selecione o Azure Blob Storage e preencha os detalhes do armazenamento de dados com os seguintes valores:  
-Fonte de dados : Armazenamento de Blobs do Azure.  
-Nome da fonte de dados : coffee-customer-data.  
-Dados a extrair : Conteúdo e metadados.  
-Modo de análise : Padrão.  
-String de conexão : *Selecione Choose an existing connection . Selecione sua conta de armazenamento, selecione o contêiner coffee-reviews e clique em Select.  
-Autenticação de identidade gerenciada : Nenhuma.  
-Nome do contêiner : esta configuração é preenchida automaticamente depois que você escolhe uma conexão existente.  
-Pasta Blob : deixe em branco.  
-Descrição : Avaliações das cafeterias Fourth Coffee.  
+Agora devemos ir até o nosso mecanismo de busca e clicar em "import data". Selecione o Azure Blob Storage e preencha os detalhes do armazenamento de dados com os seguintes valores:  
+**Fonte de dados**: Armazenamento de Blobs do Azure.  
+**Nome da fonte de dados**: coffee-customer-data.  
+**Dados a extrair**: Conteúdo e metadados.  
+**Modo de análise**: Padrão.  
+**String de conexão**: *Selecione Choose an existing connection . Selecione sua conta de armazenamento, selecione o contêiner coffee-reviews e clique em Select.  
+**Autenticação de identidade gerenciada**: Nenhuma.  
+**Nome do contêiner**: esta configuração é preenchida automaticamente depois que você escolhe uma conexão existente.  
+**Pasta Blob**: deixe em branco.  
+**Descrição**: Avaliações das cafeterias Fourth Coffee.  
 
 Por fim, selecione: Next: Add cognitive skills (Optional).
 
@@ -37,3 +37,5 @@ Por fim, selecione: Next: Add cognitive skills (Optional).
 Use o "Search explorer" para escrever e testar consultas e revisar resultados em JSON. Abaixo do índice selecionado, altere a visualização para **JSON view** e no campo "JSON query editor", faça suas perquisas no formato JSON, por exemplo:  
 {"search": "*", "count": true}  
 Selecione Search e a consulta de pesquisa retornará todos os documentos no índice de pesquisa.
+# Possíveis Usos
+Agora, imagine tudo o que pode ser feito com esse mecanismo? Grandes empresas poderiam avaliar os reports de seus clientes filtrando, por exemplo, por sentimento (negativo, positivo, neutro). Ou então, poderíamos injetar dados que fornecessem informações a respeito do impacto de um novo marketing, implementando filtros mais complexos para saber como o público alvo se sentiu em relação a propaganda.
